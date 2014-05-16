@@ -1,0 +1,18 @@
+<p>
+	{% if page.showmargin == true %}
+		{{ langstring["lang"] }}: 
+		{% for item in site.data.lang %}
+			{% assign destlangurl = page.url | remove_first: pagelangbase | prepend: "/" | prepend: item[0] | prepend: "/" %}
+			{% assign destlangurl = destlangurl | replace: "/index.html","/" %}
+			{% if item[0] == page.lang %}
+				[<b><a href="{{ destlangurl }} ">{{ item[1] }}</a></b>] 
+			{% else %}
+				[<a href="{{ destlangurl }} ">{{ item[1] }}</a>]
+			{% endif %}
+		{% endfor %}
+		&nbsp; &nbsp; &nbsp; 
+		<a href="{{ pagelangbase }}contact/"> {{ langstring["contact"] }} </a>
+		&nbsp; &nbsp; &nbsp; 
+	{% endif %}
+	{{ langstring["powered_by"] }} <a href="http://getbootstrap.com">Bootstrap</a> {{ langstring["and"] }} <a href="http://jekyllrb.com/">Jekyll</a>
+</p>

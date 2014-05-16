@@ -1,0 +1,3 @@
+{% assign langstring = page.lang | prepend: "lang_" %}
+{% assign langstring = site.data[langstring] %}
+{% assign pagelangbase = page.lang | prepend: "/" | append: "/" %}

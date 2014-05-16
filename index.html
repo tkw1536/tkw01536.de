@@ -1,0 +1,17 @@
+---
+title: 
+lang: en
+showmargin: false
+include: false
+---
+
+
+
+<div class="inner cover">
+	<h1 class="cover-heading">tkw01536.de</h1>
+	<p class="lead">
+		{% for item in site.data.lang %}
+			<a href="/{{ item[0] }}/" class="btn btn-lg btn-default">{{ item[1] }}</a>
+		{% endfor %}
+	</p>
+</div>

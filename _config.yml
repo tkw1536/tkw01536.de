@@ -1,0 +1,22 @@
+markdown: rdiscount
+exclude: [README.md]
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      lang: "en"
+      include: true
+      showmargin: true
+      layout: "default"
+      key: 500
+  -
+    scope:
+      path: "en"
+    values:
+      lang: "en"
+  -
+    scope:
+      path: "de"
+    values:
+      lang: "de"
