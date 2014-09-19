@@ -2,6 +2,8 @@
 title: Kontakt
 key: 1000
 ---
-# Kontakt
+# Kontakt &amp; Impressum
 
-Seite unter Konstruktion.
+(c) Tom Wiesing 2014
+
+Bei Fragen schreiben Sie bitte eine E-Mail an <tom@tkw01536.de>.
