@@ -1,7 +1,6 @@
 ---
 title: Projects
+external: https://tkw1536.github.io/
 ---
 
-# Projects
-
-Under construction
+Find my projects on github: https://tkw1536.github.io/
