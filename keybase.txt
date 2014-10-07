@@ -1,0 +1,82 @@
+==================================================================
+https://keybase.io/tkw01536
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://tkw01536.de
+  * I am tkw01536 (https://keybase.io/tkw01536) on keybase.
+  * I have a public key with fingerprint F206 3A6E 79C8 2614 CA38  8AB2 F476 F0FE 6207 090F
+
+To claim this, I am signing this object:
+
+{
+    "body": {
+        "client": {
+            "name": "keybase.io node.js client",
+            "version": "0.7.2"
+        },
+        "key": {
+            "fingerprint": "f2063a6e79c82614ca388ab2f476f0fe6207090f",
+            "host": "keybase.io",
+            "key_id": "F476F0FE6207090F",
+            "uid": "1e525c46a36a2bb8ff676d0b0c402a00",
+            "username": "tkw01536"
+        },
+        "merkle_root": {
+            "ctime": 1412670616,
+            "hash": "abb6d8702e2a43a6b0dc13bbfb36f7f0b7af577120f31ea16dd132078cf9c9e09ef53031810400160b337023860b8c4d7222c9e608749529963d978729ef1ea5",
+            "seqno": 73216
+        },
+        "service": {
+            "hostname": "tkw01536.de",
+            "protocol": "https:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1412670731,
+    "expire_in": 157680000,
+    "prev": "b52fd8bc55bbfdb5cad4619f1649c835947fc9ba36c45f9ee387435d66279f88",
+    "seqno": 3,
+    "tag": "signature"
+}
+
+with the aforementioned key, yielding the PGP signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: GnuPG v1
+
+owFdkn1MVWUcxwEhAwY4s3iZvOzEtCGy57w955ybRYYwoimvCRO4cF6eA+cC917u
+uVwkRC0DxYxgonVhJVEOGEgZhUFbXVKQ0dxMsoYuRFpY9LJG6GqY9ByilT1/Pc/z
++/y+z+/7+z3NQWu8fLwXXb/ek9b6h3h//oPklUOfDqwlJJtSQ5hqCblcQ1ansbOK
+FYgwEWWoRhJ1lKDZYqw2BSVY9JhVJp5wIYeu2ayYAglcAkXUxRu4kaxq1hLksDs0
+Q4tQKQBpESJOkHkKkows0jwvSpTKcFAFKoIU4IAAVCxZatOd971KrGgWaQq+TcF8
+CkhJXuVTcKxqJUAilmJlBoo0FClJ4lUVclABEpAZQIkAGKCOHKuWnGXVgGRpaNRb
+gRxl5ajIYbOtmJadmoGQDElBDkAS4opEvRQniZIEFZ4DFKJEBpuRgCKTtCSpEg1V
+TgUSJ6osx5EUUGkSiSRUFJLGdfKyKsgCAgJSWRrQJE8CBgASAommsRrN4x0vMwpH
+URTmIOA5RmApQYC0InA8R+FErMdiCzqqtNoIE0dTJKwzjg6XJiOjbKNr/zOXoCCc
+YnfYnDbZVo4DpU6nXTcZnp01doOsRlKR3ve3SJGkWRU8s/8OlcTo/f3gaDKeQHvt
+mgMVaQbBcpAHeBkPIRfWlFhKVXhJZlncGUViZVFhICmoJGTw7GlWYDhVFiQ8J5lh
+VQEhGtulWQVCihNUnv/XJY3rFEuwpK6VWEVnlQMRdY0+G329vH28HvDzMX6tV4D/
+un++cvlIyHLqjtuW/JtLb7f3x4xXeoKvPe7nbonJTFs+GxLeUdyyvnLX/tH6vPey
+mgbd1VF52bPM+/kB2QWWP57e/dxc4o/b/V1xfTcetU/mmC2pYm8oaPOdaJqu2PRn
+1yPvzKQEer5aWrDTcz3DwbNvzjbkVBWfO1SADnYlxV/6fuxwtJK6fyDpTN7B5FD3
+hhFuXdPFJ1DF8EtdUWfGddfm8afCPa7++Mlsv6/tD5//LK7NHXoizRp6+ETmdBVb
+unSlL8oaOX7hdHHZVc9catQ33a/WN1tBVsdS0F02MTe5u5BgEiq2dZrXtvc2F8wP
+vbxtL3G2R7nBNgz1xRa0urLNqn7qVnenxWypv964uy55+WhH2MJHsb2No5sHozRx
+Lljc+OwzNUmscgfkzc1m/DZ6M25+4IWfP936Yl9goeOnGcKdaXrwttv3tQaL5Js+
+ph3fevdkcFr6u6Gt2w8M1we0jJsXdhzZ9W1doHdvT8yWKXSZitwHvCdmPGsyh44/
+adbOm3KPtQWdcpk93bMRH9ZO7dnz+8c73T7bL4S3bzryRUFqfWFWf/t3s2R8xtid
+YwVhww/p9dHavbB9iV9+sD7VOUK1jFwyHdpwse6V9MHO/oiq1gX/K4T12oGI+deD
+L08PP59x8tZbi+eIicg45rGuRK+r+fY8aibiur74xoSnJnZgy85Pcqeif+lsGVic
+/As=
+=xT1I
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/tkw01536
+
+==================================================================
