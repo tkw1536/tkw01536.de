@@ -168,7 +168,7 @@ Raphael(function(){
   setInterval(function(){
     mouseDelta += Math.sqrt(Math.pow(mouseX - oldMouseX, 2) + Math.pow(oldMouseY - oldMouseY, 2)); // add to some path we moved
 
-    if (mouseDelta >= 200){
+    if (mouseDelta >= 100){
       mouseDelta = 0;
       counter++;
 
