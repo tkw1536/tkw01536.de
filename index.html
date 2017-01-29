@@ -1,23 +1,75 @@
----
-title: Welcome
-lang: en
-showmargin: false
-include: false
----
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
 
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="shortcut icon" href="/favicon.ico" />
 
+    <title>Tom Wiesing - tkw01536.de</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Header -->
+      <div class="row">
+        <div class="col s12 m12">
+          <h2>Tom Wiesing</h2>
 
-<div style="text-align: center; ">
-	<h1 class="cover-heading">tkw01536.de</h1>
-	<p class="lead">
-		{% for item in site.data.lang %}
-			<a href="/{{ item[0] }}/" class="btn btn-lg btn-default">{{ item[1] }}</a>
-		{% endfor %}
-	</p>
-</div>
+          <a href="mailto:tom@tkw01536.de" class="waves-effect waves-light btn"><i class="material-icons left">email</i>tom@tkw01536.de</a>
 
-<!-- For the fancy animation -->
-<div id="holder"></div>
+          <a href="https://github.com/tkw1536" target="_blank" class="waves-effect waves-light btn">tkw1536 on github</a>
 
-<script src="/assets/js/raphael.js"></script>
-<script src="/assets/js/title.js"></script>
+          <a href="https://twitter.com/tkw01536" target="_blank" class="waves-effect waves-light btn">@tkw01536 on twitter</a>
+        </div>
+      </div>
+
+      <div class="row">
+
+        <!-- About card -->
+        <div class="col s12 m6">
+          <div class="card">
+            <div class="card-content" style="text-align: justify; ">
+              <span class="card-title">About</span>
+              <img src="https://en.gravatar.com/userimage/47988337/2dbd49b22333472e281d9a3317e62404.png?size=100" style="max-width: 100px; max-height: 100px; padding: 5px; float: left; "/>
+                Hi, my name is Tom Wiesing and I am a German guy who is currently a <span style="color: #039be5; ">Data Engineering</span> master student at <span style="color: #039be5; ">Jacobs University Bremen</span> in my 4th and final semester.
+                <br />
+                I am working for <span style="color: #039be5; ">KWARC</span> mostly on <span style="color: #039be5; ">localmh</span>, a cross-repository administration tool for the local authoring of MathHub.info content.
+                <br />
+                In my free time I like to code. I also help the <span style="color: #039be5; ">Graduate Student Association</span> (student government) of Jacobs University by serving as their president.
+            </div>
+            <div class="card-action">
+              <a href="https://www.jacobs-university.de/" target="_blank">Jacobs University</a>
+              <a href="https://kwarc.info/" target="_blank">KWARC</a>
+              <a href="https://gsa.jacobs.university/" target="_blank">GSA</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact card -->
+        <div class="col s12 m6">
+          <div class="card">
+            <div class="card-content" style="text-align: justify; ">
+              <span class="card-title">Contact</span>
+
+              You may best contact me by sending an email to <span style="color: #039be5; ">tom@tkw01536.de</span>.
+              I prefer plain text emails in english, but I also speak german.
+              <br />
+              My public PGP key has the fingerprint <span style="color: #039be5; ">CF21 1096 D46E 2650 6A1D 6F7B DABB 5DB5 A09C 64BA</span> and should be accessible from all of the commonly used keyservers.
+              <br />
+              As a rule, I will use this key to sign any email that I send.
+              If you want me to keep your message confidential, please send me a PGP encrypted email and I will respond accordingly.
+              <br />
+
+            </div>
+            <div class="card-action">
+              <a href="tom@tkw01536.de.pub">Download PGP Key</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+ </body>
+</html>
