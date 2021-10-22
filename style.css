@@ -1,0 +1,48 @@
+em {
+    font-weight: bold;
+    font-style: normal;
+}
+
+img {
+    padding: 5px;
+    float: left;
+}
+
+#header a.btn {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.card a {
+    color: #039be5 !important;
+}
+
+.card a:hover {
+    color: blue !important;
+}
+
+.card-content {
+    text-align: justify;
+}
+
+ol.roman {
+    display: inline;
+    padding-left: 0;
+
+    list-style: none;
+    counter-reset: orderedlist;
+}
+
+p.roman {
+    display: inline;
+}
+
+ol.roman li {
+    margin-left: 10px;
+    display: inline;
+}
+
+ol.roman li::before {
+    counter-increment: orderedlist;
+    content: "(" counters(orderedlist, '', lower-roman) ")";
+}
