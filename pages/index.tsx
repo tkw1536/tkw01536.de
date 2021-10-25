@@ -137,7 +137,7 @@ export default class Home extends React.Component {
             <div className="card">
               <div className="card-content">
                 <span className="card-title">Legal</span>
-                <LegalStuff />
+                <ClientSideScript src='https://inform.everyone.wtf/legal.min.js' data-site-id='4694798b-f1f9-43fe-a26a-5188d6e241ec' />
               </div>
             </div>
           </div>
@@ -146,15 +146,28 @@ export default class Home extends React.Component {
   }
 }
 
-class LegalStuff extends React.Component {
-  private ref = React.createRef<HTMLDivElement>();
-  componentDidMount()  {
-      const element = document.createElement('script');
-      element.setAttribute('src', 'https://inform.everyone.wtf/legal.min.js');
-      element.setAttribute('data-site-id', '4694798b-f1f9-43fe-a26a-5188d6e241ec');
-      this.ref.current!.append(element);
+interface ScriptBasedContentProps {
+  src: string;
+  [key: string]: string;
+}
+
+/**
+ * ClientSideScript ensures that a script is only run client-side.
+ * Performs no property escaping what-so-ever, and should only be run on trusted data!
+ * 
+ * It runs inside of a <p> Element.
+ */
+class ClientSideScript extends React.Component<ScriptBasedContentProps> {
+  static asHTML(props: ScriptBasedContentProps) {
+    const attributes = Object.entries(props)
+      .filter(([_, value]) => typeof value === 'string')
+      .map(([key, value]) => key + '="' + value + '"').join(" ")
+    return '<script ' + attributes + '></script>'
   }
   render() {
-    return <p ref={this.ref}>&nbsp;</p>
+    // See https://github.com/facebook/react/issues/10923#issuecomment-338715787
+    // We are setting the content via dangerouslySetInnerHTML to prevent client-side overrides!
+    const __html = ClientSideScript.asHTML(this.props);
+    return <p dangerouslySetInnerHTML={{__html}}></p>
   }
 }
