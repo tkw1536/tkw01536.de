@@ -1,11 +1,14 @@
 import * as React from "react";
-import Script from 'next/script';
+import Head from "next/head";
 
 export default class Home extends React.Component {
   render() {
     return <>
+      <Head>
+        <title>Tom Wiesing</title>
+      </Head>
       <div className="row" id="header">
-        <div className="col s12 m12">
+        <div className="col s12">
           <h2>Tom Wiesing</h2>
 
           <a href="mailto:tom@tkw01536.de" className="waves-effect waves-light btn blue"><i className="material-icons left">email</i>tom@tkw01536.de</a>
@@ -14,10 +17,10 @@ export default class Home extends React.Component {
       </div>
 
       <div className="row">
-        <div className="col s12 m6">
+        <div className="col s12 l6">
           <div className="card">
             <div className="card-content">
-              <img src="https://en.gravatar.com/userimage/47988337/2dbd49b22333472e281d9a3317e62404.png?size=100" width="100" height="100" alt="Profile Image" />
+              <img src="/profile.png" width="100" height="100" alt="Profile Image" />
               <p>
                 Hi, my name is Tom Wiesing and I am a <em>PhD candidate</em> in the <em>KWARC Group at FAU Erlangen-N&uuml;rnberg</em>.
               </p>
@@ -96,7 +99,7 @@ export default class Home extends React.Component {
             </div>
           </div>
 
-          <div className="col s12 m6">
+          <div className="col s12 l6">
 
             <div className="card">
               <div className="card-content">
