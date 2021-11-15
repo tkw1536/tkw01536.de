@@ -14,7 +14,7 @@
   "dependencies": {
     "font-awesome": "^4.7.0",
     "material-icons": "^1.10.0",
-    "materialize-css": "^0.98.2",
+    "materialize-css": "^1.00",
     "next": "11.1.2",
     "push-dir": "^0.4.1",
     "react": "17.0.2",
