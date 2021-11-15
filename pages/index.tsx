@@ -6,6 +6,7 @@ export default class Home extends React.Component {
     return <>
       <Head>
         <title>Tom Wiesing</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
       </Head>
       <div className="row" id="header">
         <div className="col s12">
@@ -41,6 +42,7 @@ export default class Home extends React.Component {
                 <span className="card-title">Research</span>
                 <p className="roman">
                   Mathematical practice typically consists of four aspects:
+                </p>
                   <ol className="roman">
                       <li>
                           making <em>inferences</em> about mathematical knowledge;
@@ -55,6 +57,7 @@ export default class Home extends React.Component {
                           making <em>computations. </em>
                       </li>
                   </ol>
+                <p className="roman">
                   These are connected by a central ontology.
                 </p>
                 <p>
