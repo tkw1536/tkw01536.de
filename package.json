@@ -7,7 +7,7 @@
     "build": "next build",
     "export": "next export",
     "dist": "yarn build && yarn export",
-    "deploy": "yarn dist && push-dir --dir=out --branch=gh-pages",
+    "deploy": "yarn dist && gh-pages --dist out --no-history --dotfiles",
     "start": "next start",
     "lint": "next lint"
   },
@@ -16,13 +16,13 @@
     "material-icons": "^1.10.0",
     "materialize-css": "^1.00",
     "next": "12.1.0",
-    "push-dir": "^0.4.1",
     "react": "17.0.2",
     "react-dom": "17.0.2"
   },
   "devDependencies": {
     "@types/node": "^17.0.18",
     "@types/react": "17.0.31",
+    "gh-pages": "^3.2.3",
     "typescript": "4.4.4"
   }
 }
