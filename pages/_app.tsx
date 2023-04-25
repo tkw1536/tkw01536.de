@@ -1,7 +1,10 @@
+import '@fortawesome/fontawesome-svg-core/styles.css';
 import 'material-icons/iconfont/material-icons.css';
-import 'font-awesome/css/font-awesome.min.css';
 import 'materialize-css/dist/css/materialize.min.css';
 import '../styles/globals.css';
+
+import { config } from '@fortawesome/fontawesome-svg-core';
+config.autoAddCss = false
 
 import { default as App } from 'next/app';
 import Head from 'next/head';

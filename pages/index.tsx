@@ -1,6 +1,9 @@
 import * as React from "react";
 import Head from "next/head";
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faGithub, faMastodon } from '@fortawesome/free-brands-svg-icons'
+
 export default class Home extends React.Component {
   render() {
     return <>
@@ -13,7 +16,10 @@ export default class Home extends React.Component {
           <h2>Tom Wiesing</h2>
 
           <a href="mailto:tom@tkw01536.de" className="waves-effect waves-light btn blue"><i className="material-icons left">email</i>tom@tkw01536.de</a>
-          <a href="https://github.com/tkw1536" className="btn teal" target="_blank"><i className="fa fa-github"></i></a>
+          &nbsp;
+          <a href="https://github.com/tkw1536" className="btn teal" target="_blank"><FontAwesomeIcon icon={faGithub} /></a>
+          &nbsp;
+          <a href="https://chaos.social/@tkw01536" className="btn teal" target="_blank" rel="me"><FontAwesomeIcon icon={faMastodon} /></a>
         </div>
       </div>
 
@@ -31,9 +37,9 @@ export default class Home extends React.Component {
               </p>
             </div>
             <div className="card-action">
-              <a href="https://kwarc.info/" target="_blank" rel="noreferrer noopener">KWARC Group</a>
-              <a href="https://jacobs-alumni.de/" target="_blank" rel="noreferrer noopener">Jacobs Alumni</a>
               <a href="https://guys.wtf/" target="_blank" rel="noreferrer noopener">Collection of Random websites</a>
+              <a href="https://jacobs-alumni.de/" target="_blank" rel="noreferrer noopener">Alumni</a>
+              <a href="https://kwarc.info/" target="_blank" rel="noreferrer noopener">KWARC</a>
             </div>
            </div>
 
