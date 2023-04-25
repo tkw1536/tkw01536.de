@@ -15,14 +15,14 @@
     "font-awesome": "^4.7.0",
     "material-icons": "^1.10.0",
     "materialize-css": "^1.00",
-    "next": "12.1.0",
-    "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "next": "13.3.1",
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
   },
   "devDependencies": {
-    "@types/node": "^17.0.18",
-    "@types/react": "17.0.31",
-    "gh-pages": "^3.2.3",
-    "typescript": "4.4.4"
+    "@types/node": "^18.16.0",
+    "@types/react": "18.2.0",
+    "gh-pages": "^5.0.0",
+    "typescript": "5.0.4"
   }
 }
