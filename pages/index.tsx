@@ -19,7 +19,7 @@ export default class Home extends React.Component {
           &nbsp;
           <a href="https://github.com/tkw1536" className="btn teal" target="_blank"><FontAwesomeIcon icon={faGithub} /></a>
           &nbsp;
-          <a href="https://chaos.social/@tkw01536" className="btn teal" target="_blank" rel="me"><FontAwesomeIcon icon={faMastodon} /></a>
+          <a href="https://mastodon.social/@tkw01536" className="btn teal" target="_blank" rel="me"><FontAwesomeIcon icon={faMastodon} /></a>
         </div>
       </div>
 
