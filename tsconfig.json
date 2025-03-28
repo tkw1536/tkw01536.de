@@ -20,6 +20,7 @@
     "incremental": true
   },
   "include": [
+    "math-element-hack.d.ts",
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx"

@@ -5,26 +5,24 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "export": "next export",
-    "dist": "yarn build && yarn export",
-    "deploy": "yarn dist && gh-pages --dist out --no-history --dotfiles",
+    "deploy": "yarn build && gh-pages --dist out --no-history --dotfiles",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^6.4.0",
-    "@fortawesome/free-brands-svg-icons": "^6.4.0",
-    "@fortawesome/react-fontawesome": "^0.2.0",
-    "material-icons": "^1.10.0",
+    "@fortawesome/fontawesome-svg-core": "^6.7.2",
+    "@fortawesome/free-brands-svg-icons": "^6.7.2",
+    "@fortawesome/react-fontawesome": "^0.2.2",
+    "material-icons": "^1.13.14",
     "materialize-css": "^1.00",
-    "next": "13.3.1",
-    "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "next": "15.2.4",
+    "react": "19.0.0",
+    "react-dom": "19.0.0"
   },
   "devDependencies": {
-    "@types/node": "^18.16.0",
-    "@types/react": "18.2.0",
-    "gh-pages": "^5.0.0",
-    "typescript": "5.0.4"
+    "@types/node": "^22.13.14",
+    "@types/react": "19.0.12",
+    "gh-pages": "^6.3.0",
+    "typescript": "5.8.2"
   }
 }

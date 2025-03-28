@@ -4,8 +4,16 @@ import Head from "next/head";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub, faMastodon } from '@fortawesome/free-brands-svg-icons'
 
+function ForeignObjectHack({ math, ...rest }: { math: string } & Record<string, unknown>) {
+  return <foreignObject {...rest} dangerouslySetInnerHTML={{__html: math}} />
+}
+
 export default class Home extends React.Component {
   render() {
+    const math1 = `<math id="p1.1.m1.1" alttext="\frac{x+y}{x}" display="inline"><semantics id="p1.1.m1.1a"><mfrac id="p1.1.m1.1.1" xref="p1.1.m1.1.1.cmml"><mrow id="p1.1.m1.1.1.2" xref="p1.1.m1.1.1.2.cmml"><mi id="p1.1.m1.1.1.2.2" xref="p1.1.m1.1.1.2.2.cmml">x</mi><mo id="p1.1.m1.1.1.2.1" xref="p1.1.m1.1.1.2.1.cmml">+</mo><mi id="p1.1.m1.1.1.2.3" xref="p1.1.m1.1.1.2.3.cmml">y</mi></mrow><mi id="p1.1.m1.1.1.3" xref="p1.1.m1.1.1.3.cmml">x</mi></mfrac><annotation-xml encoding="MathML-Content" id="p1.1.m1.1b"><apply id="p1.1.m1.1.1.cmml" xref="p1.1.m1.1.1"><divide id="p1.1.m1.1.1.1.cmml" xref="p1.1.m1.1.1"></divide><apply id="p1.1.m1.1.1.2.cmml" xref="p1.1.m1.1.1.2"><plus id="p1.1.m1.1.1.2.1.cmml" xref="p1.1.m1.1.1.2.1"></plus><ci id="p1.1.m1.1.1.2.2.cmml" xref="p1.1.m1.1.1.2.2">𝑥</ci><ci id="p1.1.m1.1.1.2.3.cmml" xref="p1.1.m1.1.1.2.3">𝑦</ci></apply><ci id="p1.1.m1.1.1.3.cmml" xref="p1.1.m1.1.1.3">𝑥</ci></apply></annotation-xml></semantics></math>`
+    const math2 = `<math><mtext>.</mtext></math>`; 
+
+
     return <>
       <Head>
         <title>Tom Wiesing</title>
@@ -83,18 +91,14 @@ export default class Home extends React.Component {
                     top: 15,
                   }}>
                     <switch>
-                      <foreignObject requiredExtensions="http://www.w3.org/1998/Math/MathML" width="70" height="30">
-                        <math id="p1.1.m1.1" alttext="\frac{x+y}{x}" display="inline"><semantics id="p1.1.m1.1a"><mfrac id="p1.1.m1.1.1" xref="p1.1.m1.1.1.cmml"><mrow id="p1.1.m1.1.1.2" xref="p1.1.m1.1.1.2.cmml"><mi id="p1.1.m1.1.1.2.2" xref="p1.1.m1.1.1.2.2.cmml">x</mi><mo id="p1.1.m1.1.1.2.1" xref="p1.1.m1.1.1.2.1.cmml">+</mo><mi id="p1.1.m1.1.1.2.3" xref="p1.1.m1.1.1.2.3.cmml">y</mi></mrow><mi id="p1.1.m1.1.1.3" xref="p1.1.m1.1.1.3.cmml">x</mi></mfrac><annotation-xml encoding="MathML-Content" id="p1.1.m1.1b"><apply id="p1.1.m1.1.1.cmml" xref="p1.1.m1.1.1"><divide id="p1.1.m1.1.1.1.cmml" xref="p1.1.m1.1.1"></divide><apply id="p1.1.m1.1.1.2.cmml" xref="p1.1.m1.1.1.2"><plus id="p1.1.m1.1.1.2.1.cmml" xref="p1.1.m1.1.1.2.1"></plus><ci id="p1.1.m1.1.1.2.2.cmml" xref="p1.1.m1.1.1.2.2">𝑥</ci><ci id="p1.1.m1.1.1.2.3.cmml" xref="p1.1.m1.1.1.2.3">𝑦</ci></apply><ci id="p1.1.m1.1.1.3.cmml" xref="p1.1.m1.1.1.3">𝑥</ci></apply></annotation-xml></semantics></math>
-                      </foreignObject>
+                      <ForeignObjectHack requiredExtensions="http://www.w3.org/1998/Math/MathML" width="70" height="30" math={math1} />
                       <g>
                         <text y="15" fontSize="16">(x + y) / x</text>
                         <text x="70" y="15" fontSize="14">.</text>
                       </g>
                     </switch>
                     <switch>
-                      <foreignObject requiredExtensions="http://www.w3.org/1998/Math/MathML" width="70" height="30" x="35" y="0">
-                        <math><mtext>.</mtext></math>
-                      </foreignObject>
+                      <ForeignObjectHack requiredExtensions="http://www.w3.org/1998/Math/MathML" width="70" height="30" x="35" y="0" math={math2} />
                     </switch>
                   </svg>
                 </i>
