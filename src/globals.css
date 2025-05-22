@@ -1,50 +1,16 @@
-em {
-  font-weight: bold;
-  font-style: normal;
-  margin-left: 5px;
+header {
+  text-align: center;
+  margin-bottom: 3em;
 }
 
-img {
-  padding: 5px;
-  float: left;
+header p {
+  font-variant-caps: small-caps;
+  margin-bottom: 0.85rem;
 }
 
-#header a.btn {
-  margin-top: 5px;
-  margin-bottom: 5px;
-}
-
-.card a {
-  color: #039be5 !important;
-}
-
-.card a:hover {
-  color: blue !important;
-}
-
-.card-content {
-  text-align: justify;
-}
-
-ol.roman {
-  display: inline;
-  padding-left: 0;
-
-  list-style: none;
-  counter-reset: orderedlist;
-}
-
-p.roman {
-  display: inline;
-}
-
-ol.roman li {
-  margin-left: 10px;
-  display: inline;
-}
-
-ol.roman li::before {
-  margin: 5px;
-  counter-increment: orderedlist;
-  content: "(" counters(orderedlist, '', lower-roman) ")";
+header ul.links {
+  list-style-type: none;
+  font-family: "Lucida Console", "Courier New", monospace;
+  margin: 0;
+  padding: 0;
 }
