@@ -12,7 +12,7 @@
   "devDependencies": {
     "gh-pages": "^6.3.0",
     "typescript": "~5.8.3",
-    "vite": "^6.3.5"
+    "vite": "^6.3.6"
   },
   "dependencies": {
     "latex.css": "^1.13.0"
