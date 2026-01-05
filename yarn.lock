@@ -471,11 +471,6 @@ jsonfile@^6.0.1:
   optionalDependencies:
     graceful-fs "^4.1.6"
 
-latex.css@^1.13.0:
-  version "1.13.0"
-  resolved "https://registry.yarnpkg.com/latex.css/-/latex.css-1.13.0.tgz#a21ae5abed1e371604f49a8f9862e29694db42d9"
-  integrity sha512-UVSVh/avx/+oPwNMmI2XWO6LeQHq1BVDQ8wmo7s1rsqr7aUfIeo4VG44fSdqeZI36EpyaDzCS4tTVoXGc9YKRQ==
-
 locate-path@^5.0.0:
   version "5.0.0"
   resolved "https://registry.yarnpkg.com/locate-path/-/locate-path-5.0.0.tgz#1afba396afd676a6d42504d0a67a3a7eb9f62aa0"
