@@ -5,13 +5,12 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
+    "build": "vite build",
     "preview": "vite preview",
     "deploy": "yarn build && gh-pages --dist dist --no-history --dotfiles"
   },
   "devDependencies": {
     "gh-pages": "^6.3.0",
-    "typescript": "~5.8.3",
     "vite": "^6.4.1"
   },
   "dependencies": {},
