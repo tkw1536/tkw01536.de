@@ -3,7 +3,6 @@
   --font-system: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", system-ui, sans-serif;
   --font-mono: "SF Mono", SFMono-Regular, ui-monospace, Menlo, Monaco, "Cascadia Mono", monospace;
 
-  --max-width: 42rem;
   --space: 0.8rem;
 
   /* Spacing scale based on base unit */
@@ -59,7 +58,6 @@ body {
   line-height: 1.6;
   color: var(--color-text);
   background-color: var(--color-bg);
-  max-width: var(--max-width);
   margin-inline: auto;
 }
 
