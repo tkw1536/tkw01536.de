@@ -61,8 +61,6 @@ body {
   background-color: var(--color-bg);
   max-width: var(--max-width);
   margin-inline: auto;
-  text-align: justify;
-  hyphens: auto;
 }
 
 /* Typography */
