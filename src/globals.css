@@ -7,11 +7,8 @@
 
   /* Spacing scale based on base unit */
   --space-xs: calc(var(--space) * 0.25);
-  --space-sm: calc(var(--space) * 0.5);
   --space-md: var(--space);
   --space-lg: calc(var(--space) * 1.5);
-  --space-xl: calc(var(--space) * 2);
-  --space-2xl: calc(var(--space) * 3);
 
   /* Light theme colors */
   --color-bg: #fafafa;
@@ -52,7 +49,7 @@ html {
 
 body {
   margin: 0;
-  padding: var(--space-lg);
+  padding: var(--space-md);
   font-family: var(--font-system);
   font-size: 1rem;
   line-height: 1.6;
@@ -64,8 +61,8 @@ body {
 /* Typography */
 h1, h2, h3, h4, h5, h6 {
   line-height: 1.25;
-  margin-top: var(--space-lg);
-  margin-bottom: var(--space-sm);
+  margin-top: var(--space-md);
+  margin-bottom: calc(var(--space-md) * 0.5);
 }
 
 h1 {
@@ -109,7 +106,7 @@ q {
 /* Header */
 header {
   text-align: center;
-  margin-bottom: var(--space-xl);
+  margin-bottom: var(--space-lg);
 }
 
 header h1 {
@@ -141,8 +138,8 @@ li.link-cv {
 
 /* Footer */
 footer {
-  margin-top: var(--space-2xl);
-  padding-top: var(--space-lg);
+  margin-top: var(--space-lg);
+  padding-top: var(--space-md);
   border-top: 1px solid var(--color-border);
   color: var(--color-text-secondary);
   font-size: 0.875rem;
