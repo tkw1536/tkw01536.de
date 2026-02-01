@@ -67,7 +67,7 @@ h5,
 h6 {
     line-height: 1.25;
     margin-top: var(--space-md);
-    margin-bottom: calc(var(--space-md) * 0.5);
+    margin-bottom: calc(var(--space-md) * 0.25);
 }
 
 h1 {
